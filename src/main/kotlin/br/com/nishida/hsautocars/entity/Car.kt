@@ -1,4 +1,4 @@
-package br.com.nishida.hsautocars.domain.value_objects
+package br.com.nishida.hsautocars.entity
 
 import br.com.nishida.hsautocars.exceptions.ValidationException
 

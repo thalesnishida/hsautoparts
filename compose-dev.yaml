@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8008:8080"
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/hsautocars
+
+  mongo:
+    image: mongo:7.0.17-windowsservercore-ltsc2025
+    container_name: mongodb
+    ports:
+      - "27017:27017"

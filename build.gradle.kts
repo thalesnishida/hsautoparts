@@ -16,6 +16,7 @@ java {
 
 repositories {
     mavenCentral()
+    gradlePluginPortal()
 }
 
 val mockkVersion = "1.13.16"

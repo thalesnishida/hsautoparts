@@ -1,5 +1,6 @@
 package br.com.nishida.hsautocars.domain.value_objects
 
+import br.com.nishida.hsautocars.entity.Car
 import br.com.nishida.hsautocars.exceptions.ValidationException
 import org.junit.jupiter.api.assertThrows
 import org.springframework.boot.test.context.SpringBootTest
