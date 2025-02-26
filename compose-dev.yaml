@@ -9,7 +9,7 @@ services:
       - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/hsautocars
 
   mongo:
-    image: mongo:7.0.17-windowsservercore-ltsc2025
+    image: mongo:latest
     container_name: mongodb
     ports:
       - "27017:27017"
