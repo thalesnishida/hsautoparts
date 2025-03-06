@@ -26,6 +26,6 @@ class CarPartController(val autoPartService: AutoPartService) {
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @DeleteMapping
-    fun deleteCarPartById(@RequestBody id: String) = autoPartService.deleteCarPartById(id)
+    @DeleteMapping("/{id}")
+    fun deleteCarPartById(@PathVariable id: String) = autoPartService.deleteCarPartById(id)
 }
