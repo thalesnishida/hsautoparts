@@ -1,7 +1,7 @@
 package br.com.nishida.hsautocars.repository
 
 import br.com.nishida.hsautocars.entity.AutoPart
-import org.springframework.data.mongodb.repository.MongoRepository
+import org.springframework.data.jpa.repository.JpaRepository
 
-interface AutoPartRepository : MongoRepository<AutoPart, String> {
+interface AutoPartRepository : JpaRepository<AutoPart, String> {
 }

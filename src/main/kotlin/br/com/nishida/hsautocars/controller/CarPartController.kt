@@ -28,4 +28,8 @@ class CarPartController(val autoPartService: AutoPartService) {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     fun deleteCarPartById(@PathVariable id: String) = autoPartService.deleteCarPartById(id)
+
+    @PostMapping("/update/{id}")
+    fun updateCarPart(@RequestBody autoPart: AutoPart, @PathVariable id: String): AutoPart =
+        autoPartService.updateCarPartById(id, autoPart)
 }
